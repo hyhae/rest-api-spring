@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 public interface UserMapper {
 
     @Mapping(source = "name", target = "name")
-    @Mapping(source = "password", target = "password")
     @Mapping(source = "password", target = "hashedPassword")
     UserDTO userToUserDTO(User user);
 
